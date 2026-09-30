@@ -2,8 +2,6 @@
 
 Analisis eksploratif dan visualisasi data terhadap dataset **IBM HR Employee Attrition**, dengan fokus pada identifikasi pola dan faktor pendorong resign karyawan menggunakan pendekatan *data storytelling*.
 
-> Notebook ini merupakan bagian dari program **Job Connector Data Science & Machine Learning** (Purwadhika) — modul *Data Visualization*.
-
 ---
 
 ## Ringkasan
@@ -22,7 +20,7 @@ Kelompok paling kritis: **Sales Representative** (attrition 39.8%), **Laboratory
 |---|---|
 | **A. Import Libraries & Load Data** | Setup environment (pandas, numpy, matplotlib, seaborn) dan load dataset |
 | **B. Data Cleaning** | Drop kolom konstan, konversi tipe data, label encoding untuk kolom ordinal (satisfaction & education) |
-| **C. Latihan Visualisasi** | 15 visualisasi berjenjang (🟢 Starter → 🔵 Petunjuk Kolom → 🟣 Mandiri → 🔴 Advanced), masing-masing dengan insight terstruktur (Observasi & Interpretasi) |
+| **C. Visualisasi** | masing-masing dengan insight terstruktur (Observasi & Interpretasi) |
 | **D. Ringkasan Temuan & Rekomendasi** | Executive summary dan 3 rekomendasi prioritas berbasis data |
 
 ### Visualisasi yang Dibahas
@@ -60,9 +58,9 @@ Kelompok paling kritis: **Sales Representative** (attrition 39.8%), **Laboratory
 
 | Prioritas | Intervensi | Target | Timeline |
 |---|---|---|---|
-| 🔴 #1 | Audit & koreksi gaji karyawan < USD 3.000 dengan masa kerja < 2 tahun | Turunkan attrition entry-level dari ~30% ke ≤ 18% | 3 bulan |
-| 🟠 #2 | Redesign insentif Sales Representative + overtime cap company-wide | Turunkan attrition Sales Rep dari 39.8% ke ≤ 25% | 6 bulan |
-| 🟡 #3 | Program "First 3 Years Retention" (milestone bonus + guaranteed salary review) | Turunkan attrition 0–2 tahun masa kerja dari 29.8% ke ≤ 18% | 12 bulan |
+|  #1 | Audit & koreksi gaji karyawan < USD 3.000 dengan masa kerja < 2 tahun | Turunkan attrition entry-level dari ~30% ke ≤ 18% | 3 bulan |
+|  #2 | Redesign insentif Sales Representative + overtime cap company-wide | Turunkan attrition Sales Rep dari 39.8% ke ≤ 25% | 6 bulan |
+|  #3 | Program "First 3 Years Retention" (milestone bonus + guaranteed salary review) | Turunkan attrition 0–2 tahun masa kerja dari 29.8% ke ≤ 18% | 12 bulan |
 
 ---
 
@@ -86,9 +84,6 @@ cd <repo-folder>
 pip install pandas numpy matplotlib seaborn
 jupyter notebook HR-Employee_Attritio_Analysis.ipynb
 ```
-
-Pastikan file `HR-Employee-Attrition.csv` sudah berada di direktori yang sama dengan notebook.
-
 ---
 
-*Catatan: Seluruh angka dalam insight berdasarkan data aktual dari dataset IBM HR Employee Attrition (n=1.470). Notebook ini adalah referensi jawaban — bukan satu-satunya pendekatan yang benar; grafik dapat bervariasi selama prinsip data storytelling terpenuhi.*
+*Catatan: Seluruh angka dalam insight berdasarkan data aktual dari dataset IBM HR Employee Attrition (n=1.470).
